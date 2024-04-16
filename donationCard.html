@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Card</title>
+    <link rel="stylesheet" href="https://use.typekit.net/xxe6ldo.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="exhibitionName">AI/AS24</h1>
+        <nav class="globalNav">
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Exhibitions</a>
+                    <div class="dropdown-content">
+                        <a href="justPlainStupid.html">Just PlAIn Stupid</a>
+                        <a href="noRilla.html">NoRILLA</a>
+                        <a href="dOUG.html">D.O.U.G.</a>
+                        <a href="livingPaintings.html">Living Paintings</a>
+                    </div>
+                </li>
+                <li><a href="codingWithCharacter.html">Coding With Character</a></li>
+                <li><a href="exhibitionsByNumbers.html">By The Numbers</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="thankYou.html">Thank You</a></li>
+                <li><a href="donationCard.html">Donate</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    
+    
+    
+    <div class="contentContainer">
+        <div id="promptContainer">
+                <h2 class="centered-noUnderline">Donate To The Cause</h1>
+        </div>
+        
+        <div id="formContainer">
+            
+                <div class="form-row" id="fnameDiv">
+                    <label for="fname">*First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                </div>
+                <div class="form-row" id="lnameDiv">
+                    <label for="lname">*Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                </div>
+                <div class="form-row" id="orgDiv">
+                    <label for="org">Organization</label><br>
+                    <input type="text" id="org" name="org"><br>
+                </div>
+                <div class="form-row" id="titleDiv">
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title" name="title"><br>
+                </div>
+                <div class="form-row" id="addressDiv">
+                    <label for="address">*Address</label><br>
+                    <input type="text" id="address" name="address"><br>
+                </div>
+                <div class="form-row" id="phoneDiv">
+                    <label for="phone">*Phone</label><br>
+                    <input type="text" id="phone" name="phone"><br>
+                </div>
+                <div class="form-row" id="emailDiv">
+                    <label for="email">*Email</label><br>
+                    <input type="text" id="email" name="email"><br>
+                </div>
+                <div class="form-row" id="anonymousDiv">
+                    <label for="anonymous">Check this box if you wish to remain anonymous </label>
+                    <input type="checkbox" id="anonymous" name="anonymous"><br>
+                </div>
+                <div class="form-row" id="donationAmountDiv">
+                    <label for="amntEnclosed">Amount Enclosed:</label><br>
+                
+                    <input type="radio" id="donate20" name="donationAmount" value="20">
+                    <label for="donate20">$20</label><br>
+                
+                
+                    <input type="radio" id="donate50" name="donationAmount" value="50">
+                    <label for="donate50">$50</label><br>
+                
+                    <input type="radio" id="donate75" name="donationAmount" value="75">
+                    <label for="donate75">$75</label><br>
+                
+                    <input type="radio" id="donate150" name="donationAmount" value="150">
+                    <label for="donate150">$150</label><br>
+                
+                    <input type="radio" id="donateOther" name="donationAmount" value="other">
+                    <label for="donateOther">Other</label><br>
+                    <input type="text" id="otherAmount" name="otherAmount"><br>
+    
+                    
+                </div>
+
+                <div class="form-row">
+                    
+                </div>
+                <div class="form-row" id="submission">
+                    <input type="submit" value="Submit"><br>
+                </div>
+                
+                <script>
+                        // JavaScript to enable the "Other" amount input when "Other" is selected
+                        document.getElementById("donateOther").addEventListener('change', function() {
+                        document.getElementById("otherAmount").disabled = !this.checked;
+                        });
+                </script>
+                <script src="main.js"></script>
+             
+        </div>
+    </div>
+</body>
+</html>

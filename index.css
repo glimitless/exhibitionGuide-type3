@@ -1,0 +1,586 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 12pt;
+}
+/* General body styling */
+body {
+    font-family: 'bookmania', serif;
+    background-color: #f0f0f8; /* Light background for a subtle, playful feel */
+    color: #333; /* Darker text for contrast */
+    padding: 1.25rem;
+    font-family: "bookmania", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 0.02rem;
+    line-height: 1.25rem;
+}
+img{
+    width:100%;
+}
+
+
+h1{
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: 0rem;
+
+}
+h2, h3 {
+    color: #007BFF; /* Bright, engaging blue */
+    border-bottom: 0.125rem dashed #007BFF; /* Fun dashed underline */
+    padding-bottom: 0.3rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+h2{
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    
+
+}
+h3{
+    font-family: "greycliff-cf", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+
+}
+p{
+    font-family: "bookmania", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    letter-spacing: 0.05rem;
+    
+    background-color: #ffffff; /* White background for paragraphs */
+    border-left: 0.3rem solid #007BFF; /* Blue border on the left for emphasis */
+    padding: 0.6rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 0.2rem 0.3rem 0rem rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+.blueNoBox{
+    background-color: transparent;
+    box-shadow: none;
+    border-left: none;
+    padding-left: 0;
+    color: #007BFF;
+    font-weight: 500;
+    
+    padding-bottom: 0.3rem;
+    border-bottom: 0.125rem dashed #007BFF; /* Fun dashed underline */
+}
+.h2lvl1{
+    font-weight: 900;
+}
+.h2lvl2{
+    margin-top: 0.5rem;
+    font-weight: 300;
+    font-size: 2.3rem;
+}
+.aLittleExtraSpace{
+    background-color: transparent;
+    box-shadow: none;
+    border-left: none;
+    padding-left: 0;
+    color: #007BFF;
+    font-weight: 500;
+    /* border-bottom: 0.125rem dashed #007BFF;  */
+    border-bottom: 0.125rem dashed #007BFF; /* Fun dashed underline */
+}
+
+
+
+#containerForHangingIndent{
+    background-color: #ffffff; /* White background for paragraphs */
+    border-left: 0.3rem solid #007BFF; /* Blue border on the left for emphasis */
+    padding: 0.6rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.hangingIndent{ 
+    background-color: transparent;
+    border-left: none; /* Blue border on the left for emphasis */
+    padding: 0;
+    margin-left: 1.1rem;
+    margin-bottom: 0;
+    box-shadow: none; /* Soft shadow for depth */
+    text-indent: -1.1rem;
+}
+
+.exhib-img{
+    width: 100%;
+    box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+#logos-tier1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;  
+    margin-bottom: 1rem;
+
+}
+#logos-tier2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+}
+.logo-holder{
+    width:100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-img{
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+
+/* Navigation bar styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    
+}
+
+nav ul li a {
+    font-family: "bookmania", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    text-decoration: none;
+    color:black;
+}
+nav ul li a:hover {
+    color: #10E0FF
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute; /* Changed from relative to absolute */
+    left: 0;
+    background-color: #fff; /* Example background color */
+    min-width: 10rem; /* Adjust as necessary */
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2); /* Example shadow */
+    z-index: 1;
+    padding-top: 0.35rem;
+    border-left: 0.3rem solid #10E0FF;
+}
+
+.dropdown-content a {
+    display: block;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbtn:hover{
+    color: black;
+}
+/* When hovering over the dropdown, reduce the opacity of all list items */
+nav ul li.dropdown:hover ~ li {
+    opacity: 0.2;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between; /* Aligns children to the left and right */
+    align-items: center; /* Centers children vertically */
+    height: 10rem; /* Adjust the height as needed */
+    margin-bottom: 2.5rem;
+}
+.exhibitionName, .globalNav {
+    display: flex;
+    align-items: center; /* This ensures vertical centering within each block */
+}
+.exhibitionName{
+    margin-left:2rem;
+}
+.globalNav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-right: 2rem;
+}
+.globalNav ul li {
+    margin:0; /* Adds some space between navigation items */
+}
+
+.globalNav ul li a {
+    text-decoration: none;
+    color: black; /* Adjust color as needed */
+}
+.hidden-item {
+    display: none;
+}
+
+/*General Text*/
+#glyphs-left {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#content-body {
+    grid-column: 2;
+    grid-row: 1;
+    
+    
+}
+
+#glyphs-right {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#content-container{
+    display:grid;
+    grid-template-columns: 1fr minmax(25rem, 1.6fr) 1fr;
+    gap: 3rem;
+    
+}
+
+
+/*Donation Card*/
+#promptContainer{
+    grid-area: prompt; /* Assign to a grid area */
+    display: grid;
+}
+#formContainer{
+    grid-area: form; /* Assign to a grid area */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates a 3-column layout */
+    grid-gap: 1.25rem; /* Space between grid items */
+    background-color: #f0f0f8; /* Light background for a subtle, playful feel */
+    color: #333; /* Darker text for contrast */
+    padding: 1.25rem; /* Padding around the container */
+    margin: auto; /* Center the form in the page */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.1);
+
+}
+
+
+.contentContainer{
+    display: grid; 
+    grid-template-columns: 1fr 2fr; /* Two columns with the second one twice as wide as the first */
+    grid-template-rows: auto; /* Rows to size their content */
+    gap: 5rem; /* Optional: Adds space between the grid items */
+    grid-template-areas: "prompt form";
+ 
+}
+
+.centered-noUnderline{
+    margin:0 auto;
+    border-bottom: none;
+}
+
+.form-row {
+    margin-bottom: 1.5rem; /* Space between fields */
+}
+
+
+.form-row label,
+.form-row input[type="text"],
+.form-row input[type="submit"] {
+    width: 100%; /* Full width of the column */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+.form-row input[type="text"],
+.form-row input[type="submit"],
+.form-row input[type="checkbox"],
+.form-row input[type="radio"] {
+    border: 0.125rem solid #007BFF; /* Bright blue borders, similar to table */
+    border-radius: 0.3rem; /* Rounded corners for inputs */
+    padding: 0.5rem; /* Padding inside inputs */
+    padding-bottom: 0.3rem;
+    margin-top: 0.2rem; /* Space above inputs */
+    font-family: 'bookmania', serif; /* Consistent font with the body */
+    font-size: 1rem;
+    
+}
+
+label{
+    font-family: "bookmania", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+.form-row label {
+    color: #007BFF; /* Bright, engaging blue */
+    font-weight: 700; /* Make labels bold */
+    margin-bottom: 0.5rem; /* Space between label and input */
+    
+    
+}
+/* Highlight the 'Other' amount input when 'Other' radio is selected */
+
+/* Styling for radio buttons and checkboxes */
+.form-row input[type="checkbox"],
+.form-row input[type="radio"] {
+    margin-right: 0.05rem; /* Space before the label */
+}
+/* Styling for submit button */
+input[type="submit"] {
+    color: #ffffff; /* White text */
+    font-weight: 700; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    
+
+    
+    grid-column: 1 / -1; /* Span across all columns */
+    background-color: #fff; /* White background */
+    color: #006EE9; /* Black text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+
+}
+input[type="submit"]:hover {
+    background-color: #006EE9;
+    color: #fff;    
+}
+/* Additional playful touch for labels */
+.form-row label:hover {
+    cursor: pointer;
+    color: #F7567C; /* Change color on hover for a fun effect */
+}
+/* First name and Last name in one row */
+#fname, #lname, #org {
+    grid-column: span 1; /* Each takes up one column */
+}
+
+/* Organization in the same row as Last name */
+#title {
+    grid-column: span 2; /* Title takes up two columns */
+}
+
+/* Address and Phone in one row */
+#addressDiv, #phone {
+    grid-column: span 2; /* Each takes up two columns */
+}
+
+/* Email in the same row as Phone */
+#emailDiv {
+    grid-column: span 2; /* Email takes up one column */
+}
+
+#anonymousDiv{
+    grid-column: span 2; /* Each takes up one column */
+}
+#anonymousDiv input[type="checkbox"]{
+    margin-left:0.5rem;
+}
+/* Amount options in one row */
+#donationAmountDiv{
+    grid-column: span 3; /* Each takes up one column */
+}
+#donationAmountDiv input[type="text"]{
+    margin-left: 0.5rem;
+    width: 18.1rem;
+}
+#donateOther:checked ~ input[type="text"] {
+    border-color: #F7567C; /* Highlight color */
+}
+
+
+/* Hide the <br> tags */
+.form-row br {
+    display: none;
+}
+
+/* Additional styles for checkboxes and radio buttons */
+.form-row input[type="checkbox"],
+.form-row input[type="radio"] {
+    margin-left: 1rem; /* Space after the checkbox/radio button */
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.1);
+    margin-bottom: 2rem; /* Space between tables */
+}
+table th:nth-child(1), table td:nth-child(1) {
+    width: 68%; 
+}
+
+table th:nth-child(2), table td:nth-child(2) {
+    width: 16%; 
+}
+
+table th:nth-child(3), table td:nth-child(3) {
+    width: 16%; 
+}
+th, td {
+    border: 0.06rem solid #006EE9; /* Bright blue borders */
+    padding-top: 0.6rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+    text-align: left;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+th {
+    background-color: transparent; /* Bright blue header */
+    color: #ffffff; /* White text for contrast */
+    font-weight: 700;
+    font-family: "bookmania", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+
+td {
+    border: 0.125rem solid #007BFF; /* Slightly thicker borders for cells */
+}
+td{
+    font-family: "bookmania", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.25rem;
+}
+.bold {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.boldNoUppercase{
+    font-weight: 700;
+    text-transform: none;
+}
+.lvl2bold{
+    font-weight: 700;
+    color: #007BFF;
+}                                                                           
+.tableNumbers, .importantTableNumbers {
+    text-align: right;
+    background-color: rgba(255, 240, 244, 0.2); /* Light background for number cells */
+    color: #495057; /* Darker text for better readability */
+}
+.tableNumbers{
+    text-align: right;
+}
+.tableNumbersWithIndent{
+    text-align: right;
+    
+}
+.tableNumbersNoBorder{
+    border: none;
+    text-align: right;
+    color: black;
+    background-color: transparent;
+
+}
+.noBorder{
+    border: none;
+    background-color: transparent;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.noBorderNoText{
+    border: none;
+    padding: 0.9rem;
+    background-color: #f0f0f8;
+}
+.importantTableNumbers{
+    text-align: right;
+    font-weight: 700;
+    color: #007BFF;
+}
+.fullTableLength{
+    width:100%;
+}
+
+
+tbody{
+    background-color: #fff;
+}
+
+.tableH2, .lvl2tableH2, .tableH3{
+    text-align: center;
+    color: #007BFF; /* Theme color for consistency */
+    margin-bottom: 0.5rem;
+}
+.tableH3{
+    font-style: italic;
+    margin-top: 0.5rem; /* Space above the signature */
+}
+.lvl2tableH2{
+    font-weight: 300;
+    font-size: 2.3rem;
+    
+}
+
+
+#img-container{
+    width: 100%;
+}
+.exhibitions{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 0.8rem; 
+}
+.floorPlan{
+    width: 100%;
+    box-shadow: 0rem 0.2rem 0.3rem 0rem rgba(0,0,0,0.1);
+}
+
+
+.signature-font{
+    font-family: "splash", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.lowerFontWeight{
+    font-weight: 400;
+    font-size: 1.15rem;
+}
+
